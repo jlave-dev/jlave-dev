@@ -1,0 +1,89 @@
+body {
+	color: white;
+	font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #00003e, black);
+}
+
+header {
+	text-align: center;
+	padding: 50px 0 0;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 3em;
+}
+
+header p {
+	font-size: 1.2em;
+}
+
+main {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 2em;
+	border-bottom: 1px solid white;
+	padding-bottom: 10px;
+}
+
+section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+section ul li {
+	margin: 10px 0;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	border-top: 1px solid white;
+}
+
+a {
+	color: white;
+}
+
+/* Star styles */
+#star-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.star {
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+	0%,
+	100% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.3;
+	}
+}
