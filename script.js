@@ -19,4 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Create initial stars
 	createStars();
+
+	// Update years of experience and copyright year
+	const startYear = 2018;
+	const currentYear = new Date().getFullYear();
+	const yearsOfExperience = currentYear - startYear;
+
+	const experienceEl = document.getElementById('experience-years');
+	if (experienceEl) {
+		experienceEl.textContent = `${yearsOfExperience}+`;
+	}
+
+	const copyrightEl = document.getElementById('copyright-year');
+	if (copyrightEl) {
+		copyrightEl.textContent = currentYear;
+	}
 });
