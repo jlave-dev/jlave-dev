@@ -30,6 +30,9 @@ jobs:
         # Using -y to automatically install parcel if needed
         run: npx -y parcel build index.html --public-url / --dist-dir dist
 
+      - name: Create CNAME
+        run: echo "jlave.dev" > dist/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
