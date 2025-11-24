@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			star.style.height = star.style.width;
 			star.style.top = `${Math.random() * 100}%`;
 			star.style.left = `${Math.random() * 100}%`;
-			star.style.animation = `twinkle ${
-				Math.random() * 5 + 5
-			}s infinite alternate`;
+			star.style.animation = `twinkle ${Math.random() * 5 + 5
+				}s infinite alternate`;
 			starContainer.appendChild(star);
 		}
 	}
